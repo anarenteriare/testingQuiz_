@@ -1,0 +1,118 @@
+  :root {
+  --color-primary: #F4A81D;
+  --color-primary-light: #f1a741;
+  --color-secondary: #B01F8C;
+  --shadow-dark: 0 2rem 6rem rgba(0,0,0,.3);
+  --shadow-light: 0 2rem 5rem rgba(0,0,0,.06);
+  --color-gray-light : #C8C8C8;
+
+  --color-item-0: #F4A81D;
+  --color-item-1: #B01F8C;
+  --color-item-2: #6C0E8B;
+  --color-item-3: #6C0E8B;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html{
+  font-size: 62.5%; // 1rem = 10px; 10px/16px = 62.5%
+  // background-color: red;
+}
+
+// ---------------- Components
+
+// progressBar
+.progressbar {
+  display: flex;
+  &__title  {
+    font-size: 2.8rem;
+    color: var(--color-secondary);
+    font: normal normal bold 28px/28px Proxima Nova;
+    letter-spacing: 0px;
+    margin-right: 17px;
+  }
+  &__items {
+    display: flex;
+    flex: 1;
+    align-items: center;
+  }
+  &__item {
+    flex: 1;
+    height: 15px;
+    background-color: var(--color-gray-light);
+
+    &--active-0 {
+      background-color: var(--color-item-0);
+    }
+    &--active-1 {
+      background-color: var(--color-item-1);
+    }
+    &--active-2 {
+      background-color: var(--color-item-2);
+    }
+    &--active-3 {
+      background-color: var(--color-item-3);
+    }
+
+    &:not(:last-child) {
+      margin-right: 5px;
+    }
+  }
+}
+
+// question 
+.question {
+  margin-top: 42px;
+
+  &__name {
+    font-family: 'Proxima Nova';
+    font-size: 2.8rem;
+    letter-spacing: 0px;
+    font-weight: 600;
+  }
+  
+  &__options {
+    display: flex;
+    margin-top: 9rem;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  &__option {
+    display: flex;
+    flex: 0 0 25%;
+    flex-direction: column;
+    margin-bottom: 2.3rem;
+    &__content {
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+      justify-content: center;
+      align-items: center;
+    }
+    &__input {
+      display: none;
+    }
+    &__input:checked + &__content {
+      border: 1px solid red;
+    }
+    &__img {
+      width: 147px;
+      margin-bottom: 3.7rem;
+      max-height: 12.5rem;
+    }
+    &__label {
+      font-size: 2.8rem;
+      font: normal normal normal 28px/24px Proxima Nova;
+      letter-spacing: 0px;
+      color: #000000;
+      text-align: center;
+    }
+  }
+}

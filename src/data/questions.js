@@ -11,19 +11,22 @@ export const questions = [
                 optID: 1,
                 label: "Hardly ever.",
                 value: 1,
-                isChecked: false
+                isChecked: false,
+                icon: 'icon1',
             },
             {
                 optID: 2,
                 label: "Now and then.",
                 value: 2,
                 isChecked: false,
+                icon: 'icon2',
             },
             {
                 optID: 3,
                 label: "Ugh!  Practically all the time.",
                 value: 3,
-                isChecked: false
+                isChecked: false,
+                icon: 'icon3',
             }
         ]
     },
@@ -38,37 +41,43 @@ export const questions = [
                 optID: 4,
                 label: "Irregular bowel movements",
                 value: 1,
-                isChecked: false
+                isChecked: false,
+                icon: 'icon4',
             },
             {
                 optID: 5,
                 label: "Stomach upset",
                 value: 2,
-                isChecked: false
+                isChecked: false,
+                icon: 'icon5',
             },
             {
                 optID: 6,
                 label: "Gas and bloating",
                 value: 3,
-                isChecked: false
+                isChecked: false,
+                icon: 'icon6',
             },
             {
                 optID: 7,
                 label: "Cramping",
                 value: 4,
-                isChecked: false
+                isChecked: false,
+                icon: 'icon7',
             },
             {
                 optID: 8,
                 label: "Belching",
                 value: 5,
-                isChecked: false
+                isChecked: false,
+                icon: 'icon8',
             },
             {
                 optID: 9,
                 label: "None.  I’m good!",
                 value: 6,
-                isChecked: false
+                isChecked: false,
+                icon: 'icon9',
             }
         ]
 
